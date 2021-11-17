@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>the blue flexbox</title>
+        <style>
+            .parent1{
+                height:100vh;
+                width:200vh;
+                background-color:white;
+                display:flex;
+                flex-direction:row;
+                align-content:center; 
+                justify-content: center; 
+                align-items: center;        
+             }
+             .parent2{
+                height:400px;
+                width:600px;
+                background-color:rgb(108, 117, 117);
+                display:flex;
+                flex-direction:row;
+                justify-content:space-evenly;
+                align-items:center; 
+             }
+             .parent3{
+                height:360px;
+                width:300px;
+                background-color:rgb(108, 117, 117);
+                display:flex;
+                flex-direction:column;
+                justify-content:space-between;
+             }
+        </style>
+    </head>
+    <body>
+     <div class="parent1">
+         <div class="parent2">
+             <div style="height:360px;width:240px;background-color:rgb(0, 225, 255);"></div>
+             <div class="parent3">
+                 <div style="height:106.6px;width:300px;background-color: rgb(0, 225, 255);"></div>
+                 <div style="height:106.6px;width:300px;background-color:rgb(108, 117, 117) ;display:flex;flex-direction:row;">
+                    <div style="height:106.6px;width: 150px;border-right:10px solid rgb(108, 117, 117) ;background-color:rgb(0, 225, 255) ;"></div>
+                    <div style="height:106.6px;width: 150px;background-color:rgb(0, 225, 255);"></div>
+                </div>
+                <div style="height:106.6px;width:300px;background-color:rgb(0, 225, 255) ;"></div>
+             </div>
+         </div>
+     </div>
+    </body>
+</html>

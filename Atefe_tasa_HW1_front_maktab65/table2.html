@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <haed>
+        <style>
+            body{
+                display: flex;
+                flex-direction:column;
+                justify-content: center;
+                align-items: center;
+                align-content:center;
+                 
+            }
+            table{
+                border:1px solid black;
+                height:200px;
+                width:500px;
+                border-collapse:collapse;
+                margin-top:50px;
+            }
+            td,th{
+                border:1px solid black;
+                border-collapse:collapse;
+                font-size:18px;
+            }
+        </style>
+
+    </haed>
+    <body>
+        <div style="background-color:white;height: 30px;width: 40px;text-align:center;margin-top:50px;">
+            <p>invoice</p>
+        </div>
+        <table>
+            <thead>
+                 <tr>
+                     <th style="background-color: rgb(232, 243, 243);"><i>item/Desc.</i></th>
+                     <th style="background-color: rgb(232, 243, 243);"><i>Qty.</i></th>
+                     <th style="background-color: rgb(232, 243, 243);"> <i>@</i></th>
+                     <th style="background-color: rgb(232, 243, 243);"><i>price</i></th>
+                 </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>paperclips(BOX)</td>
+                    <td>100</td>
+                    <td>1.15</td>
+                    <td>115.00</td>
+                </tr>
+                <tr>
+                    <td>paper(case)</td>
+                    <td> 10</td>
+                    <td>45.99</td>
+                    <td>459.90</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">wastepaper<br>Baskets</td>
+                    <td rowspan="2">2</td>
+                    <td rowspan="2">17.99</td>
+                    <td rowspan="2">35.98</td>
+                </tr>
+                <tr>
+                </tr>
+                <tr>
+                    <td colspan="3" style="background-color:rgb(232, 243, 243);"><b>subtotal</b></td>
+                    <td>610.88</td>
+
+                </tr>
+                <tr>
+                    <td colspan="2" style="background-color:rgb(232, 243, 243);"><b>total</b></td>
+                    <td>7%</td>
+                    <td>42.76</td>
+
+                </tr>
+                <tr>
+                    <td colspan="3" style="background-color:rgb(232, 243, 243);"><b>total</b></td>
+                    <td>653.64</td>
+
+                </tr>
+            </tbody> 
+        </table>
+    </body>
+</html>
